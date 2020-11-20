@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: process.env !== "development" ? "/" : "/",
+  publicPath: process.env !== "development" ? "./" : "/",
   lintOnSave: false
 }

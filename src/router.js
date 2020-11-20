@@ -4,14 +4,14 @@
  * @Author: zhenzipu
  * @Date: 2019-11-06 10:34:08
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-19 15:23:29
+ * @LastEditTime: 2020-11-20 18:50:59
  */
 import Vue from "vue";
 import Router from "vue-router";
 
 Vue.use(Router);
 const router = new Router({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
