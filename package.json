@@ -2,13 +2,16 @@
   "name": "excel-preview",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zhenzp.github.io/excel-preview",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "gh-pages": "^3.1.0",
     "vue": "^2.6.11",
     "vue-router": "^3.4.9"
   },
