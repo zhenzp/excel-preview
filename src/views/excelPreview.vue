@@ -11,7 +11,6 @@
 export default {
   name: "excelPreview",
   mounted() {
-
     // 处理左上角返回按钮跳转链接
     let backUrl = location.origin + "/home";
     var options = {
@@ -120,10 +119,7 @@ export default {
     $(function() {
       let value = _this.$route.query.url;
       var name = value.substring(value.lastIndexOf("/") + 1);
-      console.log("luckysheet :>> ", luckysheet);
       var mask = document.getElementById("lucky-mask-demo");
-      console.log("mask :>> ", mask);
-      console.log("LuckyExcel :>> ", LuckyExcel);
       mask.style.display = "flex";
       window.LuckyExcel.transformExcelToLuckyByUrl(value, name, function(
         exportJson,
@@ -135,7 +131,7 @@ export default {
           );
           return;
         }
-        console.log(exportJson, luckysheetfile);
+        console.log(exportJson);
         mask.style.display = "none";
         luckysheet.destroy();
 

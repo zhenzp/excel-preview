@@ -4,36 +4,37 @@
  * @Author: zhenzipu
  * @Date: 2020-11-19 15:29:13
  * @LastEditors: zhenzipu
- * @LastEditTime: 2020-11-19 15:30:22
+ * @LastEditTime: 2020-11-19 17:51:16
 -->
 <!DOCTYPE html>
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel='stylesheet' href='./luckysheet/plugins/css/pluginsCss.css' />
-    <link rel='stylesheet' href='./luckysheet/plugins/plugins.css' />
-    <link rel='stylesheet' href='./luckysheet/css/luckysheet.css' />
-    <link  rel='stylesheet' href='./luckysheet/assets/iconfont/iconfont.css' />
-    <script type=text/javascript src="./luckyexcel.js"></script>
-    <script type=text/javascript src="./luckysheet/plugins/js/plugin.js"></script>
-    <script type=text/javascript src="./luckysheet/luckysheet.umd.js"></script>
-  </head>
-  
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="lucky-mask-demo"
-        style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">
-        Downloading</div>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link rel='stylesheet' href='./luckysheet/plugins/css/pluginsCss.css' />
+  <link rel='stylesheet' href='./luckysheet/plugins/plugins.css' />
+  <link rel='stylesheet' href='./luckysheet/css/luckysheet.css' />
+  <link rel='stylesheet' href='./luckysheet/assets/iconfont/iconfont.css' />
+  <script type=text/javascript src="./luckyexcel.js"></script>
+  <script type=text/javascript src="./luckysheet/plugins/js/plugin.js"></script>
+  <script type=text/javascript src="./luckysheet/luckysheet.umd.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="lucky-mask-demo"
+    style="position: absolute;z-index: 1000000;left: 0px;top: 0px;bottom: 0px;right: 0px; background: rgba(255, 255, 255, 0.8); text-align: center;font-size: 40px;align-items:center;justify-content: center;display: none;">
+    Downloading</div>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
 
 </html>
